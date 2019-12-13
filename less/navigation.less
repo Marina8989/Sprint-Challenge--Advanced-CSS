@@ -1,1 +1,22 @@
-// Navigation code here
+.nav {
+    .centered();
+    background: @nav-bg;
+    color: @nav-font;
+    height: 10rem;
+
+    @media @phone {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: @nav-font;
+        padding: 0 2rem;
+        font-size: 1.7rem;
+    }
+}
