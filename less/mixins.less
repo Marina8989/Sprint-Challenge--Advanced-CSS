@@ -1,1 +1,23 @@
 // Mixins Here
+.centered() {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desk() {
+    width: 100%;
+    max-width: 800px;
+}
+
+.bordered() {
+    border-radius: 5px;
+}
+
+.button(@justify, @align) {
+    justify-content: @justify;
+    align-items: @align;
+    .bordered();
+    text-align: center;
+}
